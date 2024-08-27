@@ -1,0 +1,12 @@
+input::placeholder {
+    color: grey;
+    text-align: center;
+
+    
+  }
+
+  .alingss a{
+display: flex;
+justify-content: center;
+align-items: center;
+  }
