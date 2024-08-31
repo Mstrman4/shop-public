@@ -1,7 +1,7 @@
 let $ = document ;
 
 import { metimenu } from "../component/menu/menu.js";
-import { detailmenu } from "../component/detialsmenu/menu.js";
+import { detailmenu } from "../component/detialsmenu/detailmenu.js";
 
 window.customElements.define(`meti-menu`, metimenu)
 window.customElements.define(`details-menu`, detailmenu)
@@ -19,13 +19,14 @@ window.addEventListener("DOMContentLoaded", async ()=>{
         let ff = await bb.json()
 
 
-    //   let nn (JSON.stringify(ff));
-
         cardDes.setAttribute("options" , JSON.stringify(ff))
 
          $.getElementById("navs").appendChild(cardDes)
          
          $.getElementById("navs").appendChild(cardDesdetailmenu)
+
+     
+         
 
     }
 

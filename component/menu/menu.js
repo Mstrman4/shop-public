@@ -60,7 +60,8 @@ class metimenu extends HTMLElement {
 
     tham.addEventListener('click', (e) => {
       tham.classList.toggle('tham-active');
-      document.querySelector(".hover-menu").classList.toggle("hidden")
+      document.querySelector("details-menu").classList.toggle("hidden")
+      // document.querySelector(".hover-menu").classList.toggle("hidden")
       // if(e.target){
 
       // }
@@ -68,10 +69,14 @@ class metimenu extends HTMLElement {
     });
 
     usericon.addEventListener('click', ()=>{
-      document.querySelector(".hover-menu").classList.toggle("hidden")
+      document.querySelector("details-menu").classList.toggle("hidden")
+      console.log(document.querySelector("details-menu"));
+      
     })
     imghj.addEventListener('click', ()=>{
-      document.querySelector(".hover-menu").classList.toggle("hidden")
+      document.querySelector("details-menu").classList.toggle("hidden")
+ 
+      
     })
 
     const selectElem = this.shadowRoot.querySelector('#selectElem');
