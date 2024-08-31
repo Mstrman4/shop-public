@@ -39,7 +39,6 @@ template.innerHTML = `
 
 
 
-
 `
 class metimenu extends HTMLElement {
   constructor() {
@@ -83,10 +82,13 @@ class metimenu extends HTMLElement {
 
     selectElem.classList.add("bg-blue-100")
 
-    this.className = "flex justify-around items-center p-3 meti-menu"
+    this.className = "flex justify-between items-center  meti-menu"
 
 
     let options1 = JSON.parse(this.getAttribute("options"));
+
+    // console.log(options1);
+    
 
     options1.forEach(element => {
       let option = document.createElement("option")

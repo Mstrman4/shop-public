@@ -18,6 +18,11 @@ window.addEventListener("DOMContentLoaded", async ()=>{
         
         let ff = await bb.json()
 
+        // let nbv = JSON.parse(ff)
+
+        // console.log(ff[1]);
+        
+
 
         cardDes.setAttribute("options" , JSON.stringify(ff))
 
@@ -25,7 +30,10 @@ window.addEventListener("DOMContentLoaded", async ()=>{
          
          $.getElementById("navs").appendChild(cardDesdetailmenu)
 
-     
+        //  cardDes.insertAdjacentHTML("afterbegin",`<p slot="test">${ff[1]}</p>`)
+
+        // console.log($.querySelector("meti-menu"));
+        
          
 
     }
@@ -33,6 +41,9 @@ window.addEventListener("DOMContentLoaded", async ()=>{
     
     
 })
+
+
+
 
 
 

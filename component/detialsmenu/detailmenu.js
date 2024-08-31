@@ -10,13 +10,13 @@ template.innerHTML = `
 
 
 
-  <div class=" shadow-xl rounded-md  p-4 absolute
+  <div class=" shadow-xl rounded-md z-50 p-4 absolute
      bg-white
        w-8/12 left-[30%] 
        sm:w-5/12 sm:left-[50%] 
-       md:w-4/12 
+       md:w-4/12 md:left-[60%] 
        lg:w-4/12 lg:left-[50%] 
-       xl:w-3/12 xl:left-[50%] 
+       xl:w-3/12 xl:left-[60%] 
         top-28  hover-menu" >
         <div class="img-user flex gap-3 border-b-2 p-2 ">
             <img src="img/Frame 3.png" class="w-1/5" alt="">
