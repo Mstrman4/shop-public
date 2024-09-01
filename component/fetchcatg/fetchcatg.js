@@ -34,3 +34,6 @@ class fetchcatg extends HTMLElement {
 export {
   fetchcatg
 }
+
+
+
