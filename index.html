@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="font/all.min.css">
 </head>
+<style>
+    /* تنظیمات سفارشی برای فعال‌سازی اسکرول افقی */
+    .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .scroll-container::-webkit-scrollbar {
+        height: 8px;
+    }
+    .scroll-container::-webkit-scrollbar-thumb {
+        background-color: #888;
+    }
+    .scroll-container::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+</style>
 <body class="" >
     <div class="container m-auto">
 
@@ -16,9 +33,23 @@
 
         <nav id="navs"  class="justify-around  shadow-slate-300 md:px-4 p-4 shadow-sm"></nav>
 
-        <header class="">
+        <header>
 
         </header>
+        <div class="  mx-auto mt-9 p-4">
+            <div class="flex justify-between items-baseline ">
+            <h2 class="text-2xl font-bold mb-4">Featured Category</h2>
+            <a href="#" class="  mx-1 p-2 w-3/12 text-[#1E4C2F]  hover:text-white border border-[#1E4C2F] hover:bg-[#5d8b6e]  font-bold rounded-lg text-xs text-center md:w-2/12">view detail</a>
+        </div>
+
+            <div class="">
+               
+                <div class="flex space-x-4 pb-6  whitespace-nowrap feach-catg my-5 overflow-x-auto ">
+
+                </div>
+            </div>
+        </div>
+        
 
     </div>
 
