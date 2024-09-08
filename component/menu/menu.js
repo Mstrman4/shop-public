@@ -14,8 +14,8 @@ template.innerHTML = `
 <select name="" id="selectElem" class="hidden md:block bg-transparent mx-3 font-bold"></select>
 
 <div class="flex">
- <input type="search" placeholder="search prudoct" class="bg-transparent p-1 text-center" 	/>
- <button class="text-center flex text-gray-300 justify-center items-center mx-2"><i class="fa-light fa-magnifying-glass"></i></button>
+ <input type="search" id="ssh" placeholder="search prudoct" class="bg-transparent p-1 text-center" 	/>
+ <button id="sshbtn" type="submit" class="text-center flex text-gray-300 justify-center items-center mx-2"><i class="fa-light fa-magnifying-glass"></i></button>
 </div>
 </div>
 <div class="flex justify-center items-center space-x-3 text-[#818B9C]">
@@ -87,14 +87,15 @@ class metimenu extends HTMLElement {
 
     let options1 = JSON.parse(this.getAttribute("options"));
 
+    
     // console.log(options1);
     
-
     options1.forEach(element => {
       let option = document.createElement("option")
-
-      option.value = element;
-      option.textContent = element;
+      
+      
+      option.value = element.name;
+      option.textContent = element.name;
       // option.classList.add("")
 
       selectElem.appendChild(option)
@@ -102,6 +103,18 @@ class metimenu extends HTMLElement {
 
 
 
+    this.shadowRoot.querySelector("#sshbtn").addEventListener("click",()=>{
+
+     let prodssh = this.shadowRoot.querySelector("#ssh").value
+
+     window.location.href = `/category.html?search=${encodeURIComponent(prodssh)}`;
+
+     
+     console.log(
+       this.shadowRoot.querySelector("#sshbtn"));
+
+
+    })     
 
 
 
@@ -109,14 +122,6 @@ class metimenu extends HTMLElement {
 
 
 
-
-
-    // Append options from light DOM to the shadow DOM select element
-    // this.childNodes.forEach(option => {
-    //     if (option.tagName === 'OPTION') {
-    //         selectElem.appendChild(option.cloneNode(true));
-    //     }
-    // });
 
   }
 }
