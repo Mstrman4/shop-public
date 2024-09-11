@@ -1,0 +1,22 @@
+input::placeholder {
+    color: grey;
+    text-align: center;
+
+    
+  }
+
+  .alingss{
+display: flex;
+justify-content: center;
+align-items: baseline;
+  }
+  .alingss a{
+display: flex;
+justify-content: center;
+align-items: baseline;
+  }
+
+  .hidkir {
+    display: none;
+    background-color: yellow;
+  }
