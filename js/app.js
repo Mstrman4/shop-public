@@ -17,31 +17,31 @@ let cardDesdetailmenu = document.createElement('details-menu');
 let Mainhaader = document.createElement('main-haader');
 let fetchcatgs = document.createElement('fetch-catg');
 
-// window.addEventListener("DOMContentLoaded", async () => {
-//     let bb = await fetch('https://dummyjson.com/products/categories');
+window.addEventListener("DOMContentLoaded", async () => {
+    let bb = await fetch('https://dummyjson.com/products/categories');
 
-//     if (bb.status === 200) {
+    if (bb.status === 200) {
         
-//         let ff = await bb.json();
+        let ff = await bb.json();
     
-//         cardDes.setAttribute("options", JSON.stringify(ff));
-//         $.getElementById("navs").appendChild(cardDes);
-//         $.getElementById("navs").appendChild(cardDesdetailmenu);
-//     }
-// });
+        cardDes.setAttribute("options", JSON.stringify(ff));
+        $.getElementById("navs").appendChild(cardDes);
+        $.getElementById("navs").appendChild(cardDesdetailmenu);
+    }
+});
 
-// window.addEventListener("DOMContentLoaded", async () => {
-//     let bb = await fetch("https://dummyjson.com/products/83");
+window.addEventListener("DOMContentLoaded", async () => {
+    let bb = await fetch("https://dummyjson.com/products/83");
 
-//     if (bb.status === 200) {
-//         let ff = await bb.json();
-//         $.querySelector("header").appendChild(Mainhaader);
-//         Mainhaader.insertAdjacentHTML("afterbegin", `<img src="${ff.images[0]}" slot="miniimg"></img>`);
-//         Mainhaader.insertAdjacentHTML("afterbegin", `<p slot="minititle" class="font-extrabold text-xs">${ff.title}</p>`);
-//         Mainhaader.insertAdjacentHTML("afterbegin", `<p slot="minicat" class="font-normal text-slate-500 text-xs">${ff.category}</p>`);
-//         Mainhaader.insertAdjacentHTML("afterbegin", `<span slot="rate">like : ${ff.reviews[0].rating}</span>`);
-//     }
-// });
+    if (bb.status === 200) {
+        let ff = await bb.json();
+        $.querySelector("header").appendChild(Mainhaader);
+        Mainhaader.insertAdjacentHTML("afterbegin", `<img src="${ff.images[0]}" slot="miniimg"></img>`);
+        Mainhaader.insertAdjacentHTML("afterbegin", `<p slot="minititle" class="font-extrabold text-xs">${ff.title}</p>`);
+        Mainhaader.insertAdjacentHTML("afterbegin", `<p slot="minicat" class="font-normal text-slate-500 text-xs">${ff.category}</p>`);
+        Mainhaader.insertAdjacentHTML("afterbegin", `<span slot="rate">like : ${ff.reviews[0].rating}</span>`);
+    }
+});
 
 // دریافت اطلاعات دسته‌بندی‌ها از API
 let getcat = async () => {
